@@ -19,9 +19,15 @@ fun areYouLargeFamily () {
     if (familyOption == 1 || familyOption == 2) {
         val numOfFamilyMembers = readInt("Perfecte! Tens descompte. De quants de membres estem parlant?", pMessageErrorDT = "Input incorrecte")
         when (numOfFamilyMembers) {
-            1 -> calculateConsumptionWater(consumption = )
+
         }
 }
-
-
 }
+
+fun socialBonus () {
+    val bool = readBoolean("Tens algun bonus social?", "resposta incorrecte")
+    if (bool == true) {
+        val consumptionPlusSocialBonus = (calculateConsumptionWater(200.0) * 80) / 100
+    }
+}
+
