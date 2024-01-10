@@ -16,33 +16,50 @@ fun calculateConsumptionWater(): Float {
     return consumption
 }
 
-fun calculateLargeFamily () {
+fun calculateLargeFamily (): Float {
+    var discount = 0f
     val familyOption = readInt(
-        "Ets familia nombrosa(1), monomarental(2)? No perteneixc a cap(3)",
+        "Ets familia nombrosa(1), monomarental(2) o no perteneixes a cap(3)",
         pMessageErrorDT = "Input incorrecte"
     )
     if (familyOption == 1 || familyOption == 2) {
         val numOfFamilyMembers = readInt(
-            "Perfecte! Tens descompte. De quants de membres estem parlant?",
+            "Perfecte! Tens descompte. De quants de membres estem parlant? Et recordo que máxim són 5 i que per tant, el descompte màxim és de 50%.",
             pMessageErrorDT = "Input incorrecte"
         )
-        when (numOfFamilyMembers) {
-            1 ->
+        discount = when (numOfFamilyMembers) {
+            1 -> 0.1f
+            2 -> 0.2f
+            3 -> 0.3f
+            4 -> 0.4f
+            else -> 0.5f
         }
-    }
+    } else {
+    println("D'acord, anem a continuar amb el recompte de dades") }
+    return discount
 }
 
-/*fun socialBonus () {
+fun socialBonus (): Float {
+    val consumptionPlusSocialBonus = calculateConsumptionWater()
     val bool = readBoolean("Tens algun bonus social?", "resposta incorrecte")
     if (bool) {
-        val consumptionPlusSocialBonus = (calculateConsumptionWater(200.0f) * 80) / 100
-        println(consumptionPlusSocialBonus)
+        consumptionPlusSocialBonus * 0.8f
         fixedFee = 3.0
-        println(fixedFee)
-
     }
+    return consumptionPlusSocialBonus
+}
+
+fun calculateConsumptionDependigLargeFamily () {
+
+}
+
+fun calculateConsumptionDependingSocialBonus () {
 
 }
 
 
-*/
+
+
+
+
+

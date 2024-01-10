@@ -8,8 +8,10 @@ import kotlin.math.roundToInt
  */
 
 fun main() {
-    println("Has de pagar ${calculateConsumptionWater().roundToInt()} EUR per al consum de litres d'aigua.")
-    //println(socialBonus())
-
+    calculateConsumptionWater()
+    println(socialBonus())
+    println(calculateLargeFamily())
     println("Has de pagar $fixedFee EUR de quota fixa.")
 }
+
+
