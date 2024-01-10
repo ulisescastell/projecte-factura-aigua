@@ -1,6 +1,7 @@
 import java.util.*
 
 var fixedFee:Double = 6.0
+
 fun calculateConsumptionWater (consumption: Double): Double {
     val mediumConsumptionFee:Double = 0.15
     val highConsumptionFee:Double = 0.3
@@ -28,6 +29,14 @@ fun socialBonus () {
     val bool = readBoolean("Tens algun bonus social?", "resposta incorrecte")
     if (bool == true) {
         val consumptionPlusSocialBonus = (calculateConsumptionWater(200.0) * 80) / 100
+        println(consumptionPlusSocialBonus)
+        fixedFee = 3.0
+        println(fixedFee)
+
     }
+
 }
+
+
+
 

@@ -2,5 +2,10 @@
 // then press <shortcut raw="ENTER"/>. You can now see whitespace characters in your code.
 fun main() {
     showMenu()
+    println(socialBonus())
     println(calculateConsumptionWater(200.0))
+
+
+    val provaUser = readInt("Introdueix la el teu consum de aigua al mes:", "Format incorrecte")
+    val consumption =
 }
