@@ -1,3 +1,5 @@
+import kotlin.math.roundToInt
+
 //TIP Press <shortcut raw="SHIFT"/> twice to open the Search Everywhere dialog and type <b>show whitespaces</b>,
 // then press <shortcut raw="ENTER"/>. You can now see whitespace characters in your code.
 
@@ -6,10 +8,8 @@
  */
 
 fun main() {
-    showMenu()
-    println(socialBonus())
-    println(calculateConsumptionWater(200.0))
+    println("Has de pagar ${calculateConsumptionWater().roundToInt()} EUR per al consum de litres d'aigua.")
+    //println(socialBonus())
 
-    val provaUser = readInt("Introdueix la el teu consum de aigua al mes:", "Format incorrecte")
-    val consumption =
+    println("Has de pagar $fixedFee EUR de quota fixa.")
 }
