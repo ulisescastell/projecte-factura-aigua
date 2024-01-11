@@ -376,3 +376,15 @@ fun readFloat(pMessageIn: String
     return outputValue
 }
 
+/**
+ * This method can be used to round float to two decimals
+ * @author ulisescastell
+ * @since 11/01/2024
+ * @param num Input float used to round
+ * @return given float rounded to two decimals
+ */
+fun roundFloat (num: Float): Float {
+    val numInt = (num*100).toInt()
+    return numInt.toFloat() / 100
+}
+
