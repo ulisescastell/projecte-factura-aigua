@@ -227,6 +227,46 @@ fun readInt(pMessageIn: String
 }
 
 /**
+ * This method can be used to read an Int value from the user through keyboard using java.util.Scanner with a minValue
+ * @author raimon.izard
+ * @author ulisescastell
+ * @since 15/12/2023
+ * @param pMessageIn Input message to be shown to the user
+ * @param pMessageErrorDT Data type error message to be shown to the user
+ * @param pMessageErrorDV Data value error message to be shown to the user
+ * @param pMin Min accepted value
+ * @return outputValue Output value
+ */
+fun readInt(pMessageIn: String
+            , pMessageErrorDT: String
+            , pMessageErrorDV: String
+            , pMin: Int
+): Int{
+
+    var outputValue: Int = 0
+    var correctDataType: Boolean = false
+
+    do{
+        println(pMessageIn)
+        correctDataType = scan.hasNextInt()
+
+        if (!correctDataType){
+            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+        }else{
+            outputValue = scan.nextInt()
+
+            if (outputValue < pMin){
+                println(YELLOW_BOLD_BRIGHT + "WARNING: " + pMessageErrorDV + RESET)
+                correctDataType = false
+            }
+        }
+        scan.nextLine()
+    }while(!correctDataType)
+
+    return outputValue
+}
+
+/**
  * This method can be used to read a Float value from the user through keyboard using java.util.Scanner
  * @author raimon.izard
  * @since 15/12/2023
