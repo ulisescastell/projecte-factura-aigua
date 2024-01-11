@@ -15,18 +15,18 @@ fun calculateConsumptionWater(consumption: Float): Float {
 fun calculateLargeFamily (): Float {
     var discount = 1f
     val familyOption = readInt(
-        "Ets familia nombrosa(1), monomarental(2) o no perteneixes a cap(3)",
-        pMessageErrorDT = "Input incorrecte",
-        "Valor incorrecte, has d'introduïr un nombre comprès entre 1 i 3.",
+        "$BLUE_BOLD Ets familia nombrosa(1), monomarental(2) o no perteneixes a cap(3) $RESET",
+        pMessageErrorDT = "$RED_BOLD Input incorrecte + $RESET",
+        "$RED_BOLD Valor incorrecte, has d'introduïr un nombre comprès entre 1 i 3. $RESET",
         1,
         3
 
     )
     if (familyOption == 2) {
         val numOfFamilyMembers = readInt(
-            "Perfecte! Tens descompte. De quants membres estem parlant?",
-            pMessageErrorDT = "Input incorrecte",
-            "Valor massa petit. Has d'introduïr un nombre no inferior a 2.",
+            "$BLUE Perfecte! Tens descompte. De quants membres estem parlant? $RESET",
+            pMessageErrorDT = "$RED Input incorrecte $RESET" ,
+            "$RED Valor massa petit. Has d'introduïr un nombre no inferior a 2. $RESET",
             2
         )
         discount = when (numOfFamilyMembers) {

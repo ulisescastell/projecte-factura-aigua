@@ -1,5 +1,5 @@
 fun showMenu() {
-    val str = PURPLE_BOLD + """
+    val str = BLUE_BOLD + """
     |##################################################
     |#                                                #
     |#   Benvingut a la factura de l'aigua!           #
@@ -11,9 +11,9 @@ fun showMenu() {
 
 fun showFinalInvoice(finalPrice: Float, waterPrice: Float, consumedLiters: Float, haveUSocialBonus: Boolean, areULongFamily: Float) {
 
-    println("$PURPLE_BOLD########################################")
-    println("#        AQUÍ ESTÁ LA TEVA FACTURA     #")
-    println("########################################")
+    println("$YELLOW_BOLD##################################################")
+    println("#        AQUÍ ESTÁ LA TEVA FACTURA               #")
+    println("##################################################")
     println("# Cost total: ${roundFloat(finalPrice)} EUR          ")
     println("# Quota fixa: $fixedFee EUR             ")
     println("# Consum: $consumedLiters litros        ")
@@ -28,7 +28,7 @@ fun showFinalInvoice(finalPrice: Float, waterPrice: Float, consumedLiters: Float
             println("# Sense descompte familiar             ")
         }
     }
-    println("########################################$RESET")
+    println("##################################################$RESET")
 }
 
 
