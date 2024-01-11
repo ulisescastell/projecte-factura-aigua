@@ -20,10 +20,6 @@ L'objectiu d'aquest projecte és facilitar als usuaris el càlcul de la seva fac
 - Aplicació de descomptes per bono social.
 - Descomptes addicionals per a famílies nombroses.
 
-## Contribucions
-
-Null
-
 ## Llicència
 
 Aquest projecte està llicenciat sota la llicència @ulisex
