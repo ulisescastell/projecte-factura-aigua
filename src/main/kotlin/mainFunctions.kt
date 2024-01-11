@@ -18,9 +18,9 @@ fun calculateLargeFamily (): Float {
         "Ets familia nombrosa(1), monomarental(2) o no perteneixes a cap(3)",
         pMessageErrorDT = "Input incorrecte"
     )
-    if (familyOption == 1 || familyOption == 2) {
+    if (familyOption == 2) {
         val numOfFamilyMembers = readInt(
-            "Perfecte! Tens descompte. De quants de membres estem parlant? Et recordo que máxim són 5 i que per tant, el descompte màxim és de 50%.",
+            "Perfecte! Tens descompte. De quants membres estem parlant?",
             pMessageErrorDT = "Input incorrecte"
         )
         discount = when (numOfFamilyMembers) {
@@ -30,8 +30,10 @@ fun calculateLargeFamily (): Float {
             4 -> 0.4f
             else -> 0.5f
         }
-    } else {
-    println("D'acord, anem a continuar amb el recompte de dades") }
+    }
+    if (familyOption == 1) {
+        return 0.5f
+    }
     return discount
 }
 

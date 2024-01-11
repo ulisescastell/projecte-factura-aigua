@@ -10,7 +10,9 @@ fun main() {
     calculateConsumptionWater(consumption)
     val hasSocialBonus = readBoolean("Tens algun bonus social? Respon true en cas afirmatiu i false en cas negatiu", "resposta incorrecte")
     socialBonus(consumption, hasSocialBonus)
-    calculateLargeFamily()
+    if (!hasSocialBonus) {
+        calculateLargeFamily()
+    }
     println("Has de pagar $fixedFee EUR de quota fixa.")
 }
 
