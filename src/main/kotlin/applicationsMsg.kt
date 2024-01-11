@@ -1,14 +1,30 @@
+
+/**
+ * This method can be used to print a welcome messagebox
+ * @author ulisescastell
+ * @since 11/01/2024
+ */
 fun showMenu() {
-    val str = BLUE_BOLD + """
+    val str = CYAN_BOLD + """
     |##################################################
     |#                                                #
-    |#   Benvingut a la factura de l'aigua!           #
+    |#      Benvingut a la factura de l'aigua         #
     |#                                                #
     |##################################################
     """.trimMargin() + RESET
     println(str)
 }
 
+/**
+ * This method can be used to print a sorted menu of items
+ * @author ulisescastell
+ * @since 11/01/2024
+ * @param finalPrice Input float used to call function totalConsumption
+ * @param waterPrice Input float used to call function waterConsumption
+ * @param consumedLiters Input float to call function consumption
+ * @param haveUSocialBonus Input boolean to call function hasSocialBonus
+ * @param areULongFamily Input float used to call function largeFamilyDiscount
+ */
 fun showFinalInvoice(finalPrice: Float, waterPrice: Float, consumedLiters: Float, haveUSocialBonus: Boolean, areULongFamily: Float) {
 
     println("$YELLOW_BOLD##################################################")
