@@ -16,12 +16,18 @@ fun calculateLargeFamily (): Float {
     var discount = 0f
     val familyOption = readInt(
         "Ets familia nombrosa(1), monomarental(2) o no perteneixes a cap(3)",
-        pMessageErrorDT = "Input incorrecte"
+        pMessageErrorDT = "Input incorrecte",
+        "Valor incorrecte, has d'introduïr un nombre comprès entre 1 i 3.",
+        1,
+        3
+
     )
     if (familyOption == 2) {
         val numOfFamilyMembers = readInt(
             "Perfecte! Tens descompte. De quants membres estem parlant?",
-            pMessageErrorDT = "Input incorrecte"
+            pMessageErrorDT = "Input incorrecte",
+            "Valor massa petit. Has d'introduïr un nombre no inferior a 2.",
+            2
         )
         discount = when (numOfFamilyMembers) {
             1 -> 0.1f
