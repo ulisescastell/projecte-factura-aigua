@@ -16,9 +16,18 @@ L'objectiu d'aquest projecte és facilitar als usuaris el càlcul de la seva fac
 
 ## Funcionalitats
 
-- Càlcul de la factura basat en el consum d'aigua.
-- Aplicació de descomptes per bono social.
-- Descomptes addicionals per a famílies nombroses.
+- Càlcul de la factura basat en el consum d'aigua:
+  <img width="395" alt="image" src="https://github.com/ulisescastell/projecte-factura-aigua/assets/149115239/dfe5bcfb-bd4f-44cf-bbb9-7b315d8b3b94">
+
+- Aplicació de descomptes per bono social:
+  <img width="316" alt="image" src="https://github.com/ulisescastell/projecte-factura-aigua/assets/149115239/31567280-c458-43cb-bb73-d04b1dd06bc9">
+  <img width="448" alt="image" src="https://github.com/ulisescastell/projecte-factura-aigua/assets/149115239/58117567-4b40-40df-bffb-195081546b5d">
+
+- Descomptes addicionals per a famílies nombroses:
+<img width="852" alt="image" src="https://github.com/ulisescastell/projecte-factura-aigua/assets/149115239/a996cc5e-0760-4522-8526-0353082ef20d">
+
+-Sortida de ticket:
+<img width="314" alt="image" src="https://github.com/ulisescastell/projecte-factura-aigua/assets/149115239/bf2890e9-18a9-4af2-8535-6536b6a68e00">
 
 ## Llicència
 
