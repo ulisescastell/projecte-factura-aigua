@@ -1,4 +1,13 @@
+
 var fixedFee:Float = 6.0f
+
+/**
+ * This method can be used to return a price of water depending on how many liters of water have been spent
+ * @author ulisescastell
+ * @since 11/01/2024
+ * @param consumption Input float used to call function totalConsumption
+ * @return Returns a float with the price of water multiplicated with the percentage of the consumption fee
+ */
 
 fun calculateConsumptionWater(consumption: Float): Float {
     val mediumConsumptionFee:Float = 0.15f
@@ -11,6 +20,13 @@ fun calculateConsumptionWater(consumption: Float): Float {
     }
     return consumption*highConsumptionFee
 }
+
+/**
+ * This method can be used to return a percentage based on how many people can are be in a family.
+ * @author ulisescastell
+ * @since 11/01/2024
+ * @return Returns a float with the percentaje of discount that will be used to calculate the total price
+ */
 
 fun calculateLargeFamily (): Float {
     var discount = 1f
@@ -42,6 +58,15 @@ fun calculateLargeFamily (): Float {
     }
     return discount
 }
+
+/**
+ * This method can be used to return a float with a percentage and changes fixedFee if a person has social bonus or not
+ * @author ulisescastell
+ * @since 11/01/2024
+ * @param consumption Input float used to call function totalConsumption
+ * @param socialBonus Input used to if a person has social bonus or not
+ * @return Returns a float with the percentage to discount
+ */
 
 fun socialBonus(consumption: Float, socialBonus: Boolean): Float {
     if (socialBonus) {
