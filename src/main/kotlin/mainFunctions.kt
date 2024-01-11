@@ -13,7 +13,7 @@ fun calculateConsumptionWater(consumption: Float): Float {
 }
 
 fun calculateLargeFamily (): Float {
-    var discount = 0f
+    var discount = 1f
     val familyOption = readInt(
         "Ets familia nombrosa(1), monomarental(2) o no perteneixes a cap(3)",
         pMessageErrorDT = "Input incorrecte",
@@ -48,7 +48,7 @@ fun socialBonus(consumption: Float, socialBonus: Boolean): Float {
         fixedFee = 3.0f
         return 0.2f
     }
-    return 0.0f
+    return 1f
 }
 
 
