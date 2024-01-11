@@ -1,11 +1,11 @@
 fun showMenu() {
-    val str = """
+    val str = CYAN_BOLD_BRIGHT + """
     |##################################################
     |#                                                #
     |#   Benvingut a la factura de la llum!           #
     |#                                                #
     |##################################################
-    """.trimMargin()
+    """.trimMargin() + RESET
     println(str)
 }
 

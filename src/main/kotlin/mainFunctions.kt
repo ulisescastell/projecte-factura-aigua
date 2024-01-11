@@ -30,10 +30,10 @@ fun calculateLargeFamily (): Float {
             2
         )
         discount = when (numOfFamilyMembers) {
-            1 -> 0.1f
-            2 -> 0.2f
-            3 -> 0.3f
-            4 -> 0.4f
+            1 -> 0.9f
+            2 -> 0.8f
+            3 -> 0.7f
+            4 -> 0.6f
             else -> 0.5f
         }
     }
@@ -45,18 +45,10 @@ fun calculateLargeFamily (): Float {
 
 fun socialBonus(consumption: Float, socialBonus: Boolean): Float {
     if (socialBonus) {
-        consumption * 0.8f
+        consumption * 0.2f
         fixedFee = 3.0
     }
     return consumption
-}
-
-fun calculateConsumptionDependigLargeFamily () {
-
-}
-
-fun calculateConsumptionDependingSocialBonus () {
-
 }
 
 
