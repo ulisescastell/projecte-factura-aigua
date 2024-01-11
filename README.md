@@ -1,3 +1,5 @@
+![image](https://github.com/ulisescastell/projecte-factura-aigua/assets/149115239/bc0b5fd3-43a4-4876-8932-b8a095fdf6fc)
+
 # Projecte de Factura d'Aigua
 
 Aquest projecte és una aplicació de consola escrita en Kotlin que calcula la factura d'aigua d'un usuari basant-se en el seu consum mensual.
@@ -6,7 +8,6 @@ Aquest projecte és una aplicació de consola escrita en Kotlin que calcula la f
 
 - [Introducció](#introducció)
 - [Funcionalitats](#funcionalitats)
-- [Contribucions](#contribucions)
 - [Llicència](#llicència)
 
 ## Introducció
@@ -19,18 +20,10 @@ L'objectiu d'aquest projecte és facilitar als usuaris el càlcul de la seva fac
 - Aplicació de descomptes per bono social.
 - Descomptes addicionals per a famílies nombroses.
 
-## Captures de pantalla
-
-A continuació es mostren algunes captures de pantalla del codi font:
-
-![Funció Principal](link-a-la-imagen-mainFunctions.png)
-![Càlcul de Consum](link-a-la-imagen-calculateConsumption.png)
-![Bons Socials](link-a-la-imagen-socialBonus.png)
-
 ## Contribucions
 
 Null
 
 ## Llicència
 
-Aquest projecte està llicenciat sota la Llicència @ulisex
+Aquest projecte està llicenciat sota la llicència @ulisex
