@@ -1,16 +1,16 @@
 import kotlin.math.roundToInt
 
-//TIP Press <shortcut raw="SHIFT"/> twice to open the Search Everywhere dialog and type <b>show whitespaces</b>,
-// then press <shortcut raw="ENTER"/>. You can now see whitespace characters in your code.
-
 /**
  * @author ulises_castell
  */
 
 fun main() {
-    calculateConsumptionWater()
-    println(socialBonus())
-    println(calculateLargeFamily())
+    showMenu()
+    val consumption = readFloat("Introdueix el consum d'aigua mensual", "resposta incorrecte")
+    calculateConsumptionWater(consumption)
+    val hasSocialBonus = readBoolean("Tens algun bonus social? Respon true en cas afirmatiu i false en cas negatiu", "resposta incorrecte")
+    socialBonus(consumption, hasSocialBonus)
+    calculateLargeFamily()
     println("Has de pagar $fixedFee EUR de quota fixa.")
 }
 

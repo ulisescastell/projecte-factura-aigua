@@ -1,19 +1,15 @@
 var fixedFee:Double = 6.0
 
-fun calculateConsumptionWater(): Float {
-    var consumption = readFloat("Introdueix el consum d'aigua mensual", "resposta incorrecte")
+fun calculateConsumptionWater(consumption: Float): Float {
     val mediumConsumptionFee:Float = 0.15f
     val highConsumptionFee:Float = 0.3f
     if (consumption < 50.0) {
-        consumption = 0f
+        return 0f
     }
     if (consumption in 50.0..200.0) {
-        consumption*=mediumConsumptionFee
+        return consumption*mediumConsumptionFee
     }
-    if (consumption > 200) {
-        consumption*=highConsumptionFee
-    }
-    return consumption
+    return consumption*highConsumptionFee
 }
 
 fun calculateLargeFamily (): Float {
@@ -39,14 +35,12 @@ fun calculateLargeFamily (): Float {
     return discount
 }
 
-fun socialBonus (): Float {
-    val consumptionPlusSocialBonus = calculateConsumptionWater()
-    val bool = readBoolean("Tens algun bonus social?", "resposta incorrecte")
-    if (bool) {
-        consumptionPlusSocialBonus * 0.8f
+fun socialBonus(consumption: Float, socialBonus: Boolean): Float {
+    if (socialBonus) {
+        consumption * 0.8f
         fixedFee = 3.0
     }
-    return consumptionPlusSocialBonus
+    return consumption
 }
 
 fun calculateConsumptionDependigLargeFamily () {
