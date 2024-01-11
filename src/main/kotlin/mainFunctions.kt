@@ -32,7 +32,7 @@ fun calculateLargeFamily (): Float {
     var discount = 1f
     val familyOption = readInt(
         "$BLUE_BOLD Ets familia nombrosa(1), monomarental(2) o no perteneixes a cap(3) $RESET",
-        pMessageErrorDT = "$RED_BOLD Input incorrecte + $RESET",
+        pMessageErrorDT = "$RED_BOLD Input incorrecte $RESET",
         "$RED_BOLD Valor incorrecte, has d'introduïr un nombre comprès entre 1 i 3. $RESET",
         1,
         3
