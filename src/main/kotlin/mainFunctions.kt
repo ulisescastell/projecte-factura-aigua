@@ -1,4 +1,4 @@
-var fixedFee:Double = 6.0
+var fixedFee:Float = 6.0f
 
 fun calculateConsumptionWater(consumption: Float): Float {
     val mediumConsumptionFee:Float = 0.15f
@@ -45,10 +45,10 @@ fun calculateLargeFamily (): Float {
 
 fun socialBonus(consumption: Float, socialBonus: Boolean): Float {
     if (socialBonus) {
-        consumption * 0.2f
-        fixedFee = 3.0
+        fixedFee = 3.0f
+        return 0.2f
     }
-    return consumption
+    return 0.0f
 }
 
 
