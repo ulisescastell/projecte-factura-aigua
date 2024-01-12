@@ -29,21 +29,22 @@ fun showFinalInvoice(finalPrice: Float, waterPrice: Float, consumedLiters: Float
 
     println("$YELLOW_BOLD##################################################")
     println("#        AQUÍ ESTÁ LA TEVA FACTURA               #")
-    println("##################################################")
-    println("# Cost total: ${roundFloat(finalPrice)} EUR          ")
-    println("# Quota fixa: $fixedFee EUR             ")
-    println("# Consum: $consumedLiters litros        ")
-    println("# Cost aigua: ${roundFloat(waterPrice)} EUR        ")
+    println("##################################################$RESET")
+    println("# Quota fixa: $BLUE_BOLD$fixedFee$RESET EUR             ")
+    println("# Consum: $BLUE_BOLD$consumedLiters$RESET litros        ")
+    println("# Cost aigua: $BLUE_BOLD${roundFloat(waterPrice)}$RESET EUR        ")
     if (haveUSocialBonus) {
-        println("# BONUS SOCIAL APLICAT: -80%           ")
+        println("# ${GREEN_BOLD}BONUS SOCIAL APLICAT: -80%$RESET           ")
     } else {
-        println("# Sense descompte per bonus social                 ")
+        println("# ${RED_BOLD}Sense descompte per bonus social$RESET                 ")
         if (areULongFamily != 3.0f) {
-            println("# Descompte familiar: ${100 - (areULongFamily * 100)}% ")
+            println("# ${GREEN_BOLD}Descompte familiar: ${100 - (areULongFamily * 100)}$$RESET% ")
         } else {
-            println("# Sense descompte familiar             ")
+            println("# ${RED_BOLD}Sense descompte familiar${RESET}            ")
         }
     }
+    println("$WHITE_BOLD--------------------------------------------------$RESET")
+    println("$YELLOW_BOLD# Cost total: ${roundFloat(finalPrice)} EUR          ")
     println("##################################################$RESET")
 }
 
